@@ -53,7 +53,7 @@ main,.header-container{
         color: #E95A08;
         margin-bottom: 15px;
     }
-    .description-para,.plants-para{
+    .description-para,.plants-para,.lists{
         font-size: 1.28rem;
         color: rgba(0, 0, 0, 0.5);
     }
@@ -99,4 +99,35 @@ main,.header-container{
         color: white;
         font-weight: 600;
         border: none;
+    }
+    /* trusted part */
+    .trusted{
+        display: flex;
+        margin-top: 210px;
+        align-items: center;
+
+    }
+    .trusted-image{
+        position: relative;
+        margin-right: 90px;
+    }
+    .badge{
+        width: 286px;
+        height: 286px;
+        position: absolute;
+        top: -143px;
+        right: -143px;
+        z-index: 10;
+    }
+    .trusted-description-head{
+        font-size: 3rem;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+    .lists{
+        width: 540px;
+        margin: 20px 0;
+    }
+    .lists li{
+        height: 120px;
     }
