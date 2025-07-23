@@ -1,0 +1,56 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.header-container{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+/* nav section */
+    .nav-container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 24px;
+    }
+   
+    .nav-link-container{
+        display: flex;
+        gap: 48px;
+    }
+    .nav-link-container li{
+        list-style: none;
+        font-family: sans-serif;
+    }
+    .nav-link-container a{
+        text-decoration: none;
+        color: #8987A1;
+    }
+    #home{
+        font-weight: bold;
+        color: #252432;
+    }
+    /* banner */
+    .banner-container{
+        height: 462px;
+        display: flex;
+        align-items: flex-end;
+    }
+    
+    .banner-image{
+        background-image: url("assets/hero-flower.png");
+        max-width: 570px;
+        height: 355px;
+    }
+    .description-head{
+        font-size: 4rem;
+        font-weight: bold;
+        color: #E95A08;
+        margin-bottom: 15px;
+    }
+    .description-para{
+        font-size: 1.28rem;
+        color: rgba(0, 0, 0, 0.5);
+    }
