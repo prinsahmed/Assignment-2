@@ -1,4 +1,4 @@
-*{
+*{  outline: 1px solid red;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -7,6 +7,7 @@
 
 
 main,.header-container{
+    width: 100%;
     max-width: 1140px;
     margin: 0 auto;
 }
@@ -338,13 +339,9 @@ main,.header-container{
 
 /* nav media */
 @media screen and (max-width:576px){
-    main{
-        margin: 10px;
-    }
-    header{
-        width:100% ;
-        
-    }
+    
+    
+    
     .nav-container img{
         width: 63px;
     }
@@ -365,12 +362,15 @@ main,.header-container{
         text-align: center;
     }
     .plant-card-container{
-        
-        grid-template-columns:repeat(2,171px);
+        grid-template-columns:repeat(2,1fr);
+        gap: 5px;
     }
     .plant-card img{
-        width: 171px;
+        display: block;
+        margin: 0 auto;
+        width: 100%;
     }
+    
     .plants-head{
         font-size: 1.5rem;
     }
@@ -379,15 +379,19 @@ main,.header-container{
     }
     .trusted{
         flex-direction: column;
-        width: 100%;
+        
+        
+    }
+    .trusted-image{
+        margin-right:0px;
     }
     .trusted-img{
+        
         width: 100%;
-        display: block;
-        margin: 0 auto;
+        
     }
     .lists{
-        width: 100%;
+        width:100%;
     }
     .badge{
         display: none;
@@ -416,7 +420,8 @@ main,.header-container{
     font-weight: 600;
 }
 .form{
-    width: 321px;
+    width: 100%;
+    max-width: 321px;
     margin: 0 auto;
 }
 .email-heading{
@@ -433,6 +438,12 @@ main,.header-container{
     width: 103px;
 }
 .footer-last-container{
+    width: 100%;
+}
+.footer-last-container{
     flex-direction: column;
+}
+.footer-first p{
+    width: 100%;
 }
 }
