@@ -69,14 +69,25 @@ main,.header-container{
         list-style: none;
         font-family: sans-serif;
     }
+    #cart{
+        font-weight: bold;
+        color: #09090b;
+    }
     .nav-link-container a{
         font-size: 12px;
         text-decoration: none;
         color: #8987A1;
     }
-    #home,#cart{
-        font-weight: bold;
-        color: #252432;
+    
+    .tooltip{
+        display: none;
+        position: absolute;
+        right: 190px;
+        top: 100px;
+        
+    }
+    #cart:active + .tooltip{
+        display: block;
     }
     /* banner */
     .banner-container{
@@ -161,6 +172,19 @@ main,.header-container{
         top: -143px;
         right: -143px;
         z-index: 10;
+        animation-name: badgespin;
+        animation-timing-function: linear;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+    }
+    @keyframes badgespin {
+        0% {
+            transform: rotate(0deg);
+        }
+        
+        100%{
+            transform: rotate(360deg)
+        }
     }
     .trusted-description-head{
         font-size: 3rem;
@@ -308,4 +332,107 @@ main,.header-container{
 }
 .twitter{
     height: 32px;
+}
+
+/* responsive for mobile */
+
+/* nav media */
+@media screen and (max-width:576px){
+    main{
+        margin: 10px;
+    }
+    header{
+        width:100% ;
+        
+    }
+    .nav-container img{
+        width: 63px;
+    }
+    .banner-container img{
+        width: 393px;
+    }
+    .link{
+        display: none;
+    }
+    .banner-container{
+        flex-direction: column-reverse;
+        margin-top: 150px;
+    }
+    .description{
+        margin-top: 28px;
+    }
+    .description-head,.description-para{
+        text-align: center;
+    }
+    .plant-card-container{
+        
+        grid-template-columns:repeat(2,171px);
+    }
+    .plant-card img{
+        width: 171px;
+    }
+    .plants-head{
+        font-size: 1.5rem;
+    }
+    .plants-para{
+        font-size: .8rem;
+    }
+    .trusted{
+        flex-direction: column;
+        width: 100%;
+    }
+    .trusted-img{
+        width: 100%;
+        display: block;
+        margin: 0 auto;
+    }
+    .lists{
+        width: 100%;
+    }
+    .badge{
+        display: none;
+    }
+    .grid-container{
+        grid-template-columns: 1fr;
+        grid-template-rows: 184px 184px 184px;
+        
+    }
+    .item2{
+        grid-column:initial;
+        grid-row:initial;
+        
+    }
+    .item3{
+        grid-row: 2;
+        
+    }
+    .item2 h4{
+        font-size: 1.25rem;
+        font-weight: bold;
+        margin-top: 70px;
+    }
+    .item2 h5{
+    font-size: .8rem;
+    font-weight: 600;
+}
+.form{
+    width: 321px;
+    margin: 0 auto;
+}
+.email-heading{
+    width: 235px;
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin: 0 auto 10px;
+}
+.form input{
+    width: 218px;
+    
+}
+.form button{
+    width: 103px;
+}
+.footer-last-container{
+    flex-direction: column;
+}
 }
