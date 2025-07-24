@@ -1,4 +1,4 @@
-*{  outline: 1px solid red;
+*{  
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -340,26 +340,32 @@ main,.header-container{
 /* nav media */
 @media screen and (max-width:576px){
     
-    
+    body{
+        margin: 0 10px;
+    }
     
     .nav-container img{
         width: 63px;
     }
     .banner-container img{
-        width: 393px;
+        width: 100%;
     }
     .link{
         display: none;
     }
     .banner-container{
         flex-direction: column-reverse;
-        margin-top: 150px;
+        margin-top: 50px;
     }
     .description{
         margin-top: 28px;
     }
-    .description-head,.description-para{
-        text-align: center;
+    .description-head,
+    .plants-head,
+    .trusted-description-head,
+    .latest-head{
+        font-size: 1.5rem;
+        font-weight: bold;
     }
     .plant-card-container{
         grid-template-columns:repeat(2,1fr);
@@ -372,14 +378,15 @@ main,.header-container{
     }
     
     .plants-head{
-        font-size: 1.5rem;
+        margin-top: 50px;
     }
+    
     .plants-para{
         font-size: .8rem;
     }
     .trusted{
         flex-direction: column;
-        
+        margin-top: 70px;
         
     }
     .trusted-image{
@@ -390,8 +397,15 @@ main,.header-container{
         width: 100%;
         
     }
+    .latest-deal{
+        margin-top: 30px;
+    }
+    .latest-para{
+        margin-bottom: 30px;
+    }
     .lists{
-        width:100%;
+        width:90%;
+        margin: 0 25px;
     }
     .badge{
         display: none;
@@ -445,5 +459,10 @@ main,.header-container{
 }
 .footer-first p{
     width: 100%;
+}
+.email-container{
+    height: 276px;
+    padding-top: 100px;
+    margin: -10px;
 }
 }
