@@ -80,16 +80,7 @@ main,.header-container{
         color: #8987A1;
     }
     
-    .tooltip{
-        display: none;
-        position: absolute;
-        right: 190px;
-        top: 100px;
-        
-    }
-    #cart:active + .tooltip{
-        display: block;
-    }
+    
     /* banner */
     .banner-container{
         height: 462px;
@@ -445,11 +436,11 @@ main,.header-container{
     margin: 0 auto 10px;
 }
 .form input{
-    width: 218px;
+    width: 200px;
     
 }
 .form button{
-    width: 103px;
+    width: 100px;
 }
 .footer-last-container{
     width: 100%;
