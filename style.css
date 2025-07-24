@@ -11,6 +11,48 @@ main,.header-container{
     margin: 0 auto;
 }
 
+
+/* inter */
+
+.nav-link-container a,
+.description-para,
+.plants-para,
+.plant-name,
+.plant-price,
+.plant-btn,.lists,
+.latest-para,
+.item1 h5,
+.item2 h5,
+.footer-first p,
+.form input,
+.form button,
+.footer-links,
+.item3 h5{
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+/* noto serif */
+
+.description-head,
+.plants-head,
+.trusted-description-head,
+.latest-head,
+.item1 h4,
+.item2 h4,
+.item3 h4,
+.email-heading{
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+
 /* nav section */
     .nav-container{
         display: flex;
@@ -28,10 +70,11 @@ main,.header-container{
         font-family: sans-serif;
     }
     .nav-link-container a{
+        font-size: 12px;
         text-decoration: none;
         color: #8987A1;
     }
-    #home{
+    #home,#cart{
         font-weight: bold;
         color: #252432;
     }
