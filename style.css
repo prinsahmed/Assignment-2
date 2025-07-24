@@ -372,7 +372,11 @@ main,.header-container{
         margin-top: 50px;
     }
     
-    .plants-para{
+    .plants-para,
+    .description-para,
+    .latest-para,
+    .lists,
+    .footer-first p{
         font-size: .8rem;
     }
     .trusted{
