@@ -161,9 +161,10 @@ main,.header-container{
         width: 286px;
         height: 286px;
         position: absolute;
-        top: -143px;
-        right: -143px;
+        top: -120px;
+        right: -120px;
         z-index: 10;
+        filter: drop-shadow(0px 0px 30px #363636);
         animation-name: badgespin;
         animation-timing-function: linear;
         animation-duration: 10s;
@@ -346,7 +347,7 @@ main,.header-container{
     }
     .banner-container{
         flex-direction: column-reverse;
-        margin-top: 50px;
+        
     }
     .description{
         margin-top: 28px;
@@ -360,7 +361,7 @@ main,.header-container{
     }
     .plant-card-container{
         grid-template-columns:repeat(2,1fr);
-        gap: 5px;
+        gap: 40px 5px;
     }
     .plant-card img{
         display: block;
@@ -401,6 +402,9 @@ main,.header-container{
     .lists{
         width:90%;
         margin: 0 25px;
+    }
+    .lists li{
+        height:80px;
     }
     .badge{
         display: none;
