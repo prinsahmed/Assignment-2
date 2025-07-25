@@ -414,6 +414,10 @@ main,.header-container{
         grid-template-rows: 184px 184px 184px;
         
     }
+    .item1{
+        background-repeat:no-repeat;
+        background-size: cover;
+    }
     .item2{
         grid-column:initial;
         grid-row:initial;
@@ -421,6 +425,8 @@ main,.header-container{
     }
     .item3{
         grid-row: 2;
+        background-repeat:no-repeat;
+        background-size: cover;
         
     }
     .item2 h4{
